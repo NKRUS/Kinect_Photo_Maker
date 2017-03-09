@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: mikha
+Build-Jdk: 1.8.0_102
+Package: ru.kit.Kinect
+Main-Class: ru.kit.Kinect.VideoViewerApp
+Class-Path: lib/j4k2-natives-windows-amd64-1.0.0.jar lib/ufdw-20170112
+ .jar lib/gluegen-rt.jar lib/gluegen-rt-natives-windows-amd64.jar lib/jogl-all.jar lib/jogl-all-natives-windows-amd64.jar
+
