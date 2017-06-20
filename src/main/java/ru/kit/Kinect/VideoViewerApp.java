@@ -25,6 +25,10 @@ public class VideoViewerApp extends DWApp {
     static String path;
 
 
+    @Override
+    public void MenuGUIsetup(JMenuBar menuBar) {
+        menuBar.setVisible(false);
+    }
 
     public void GUIsetup(JPanel p_root) {
 
@@ -86,7 +90,7 @@ public class VideoViewerApp extends DWApp {
     }
 
     public static void startKinect() {
-        createMainFrame("Video Viewer App");
+        createMainFrame("ОДА");
         app = new VideoViewerApp();
         Dimension sSize = Toolkit.getDefaultToolkit().getScreenSize();
         int width = sSize.width - 300;

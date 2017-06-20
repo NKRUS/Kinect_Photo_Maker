@@ -69,7 +69,7 @@ public class VideoPanel extends OpenGLPanel {
         videoTexture.use(gl);
         translate(0, 0, -2.2);
         //rotateZ(180);
-        rotateZ(90);
+        rotateZ(90);//Angle or KINECT Position
         //image(3.9, 2);
         image(2.0, 1.2);
 
@@ -88,7 +88,7 @@ public class VideoPanel extends OpenGLPanel {
 
     private void drawShape() {
         float y = 0.40f;
-        float x = 0.61f;
+        float x = 0.65f;
         float dx = 0.29f;
         GL2 gl = getGL2();
         gl.glColor3f(5,0,0);
@@ -113,6 +113,8 @@ public class VideoPanel extends OpenGLPanel {
         gl.glVertex3f( x - dx, -y, 0 );
         gl.glVertex3f( x - dx, y, 0 );
         gl.glEnd();
+
+
         gl.glFlush();
     }
 
